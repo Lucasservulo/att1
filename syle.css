@@ -1,0 +1,109 @@
+.hover-div:hover {
+  background-color: yellow;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+p:first-of-type {
+  color: red;
+}
+
+
+p i:first-of-type {
+  color: blue;
+}
+
+
+div > p:first-of-type i {
+  color: green;
+}
+
+
+p:lang(en) {
+  color: blue;
+}
+
+p:lang(fr) {
+  color: red;
+}
+
+.first-line::first-line {
+  font-weight: bold;
+}
+
+
+.first-letter::first-letter {
+  font-size: 2em;
+  color: red;
+}
+
+
+.pseudo-element::before {
+  content: "Antes - ";
+  color: purple;
+}
+
+.pseudo-element::after {
+  content: " - Depois";
+  color: orange;
+}
+
+
+.multiple-pseudo-elements::before {
+  content: "Início - ";
+  color: teal;
+}
+
+.multiple-pseudo-elements::after {
+  content: " - Fim";
+  color: teal;
+}
+
+
+.before-element::before {
+  content: "Antes: ";
+  color: blue;
+}
+
+.after-element::after {
+  content: " - Depois";
+  color: green;
+}
+
+
+.marker-element li::marker {
+  color: red;
+}
+
+
+.selection-element::selection {
+  background: yellow;
+  color: black;
+}
