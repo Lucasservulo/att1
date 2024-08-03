@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Pseudo-classes e Pseudo-elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pseudo-classes e Pseudo-elementos</h1>
+
+    <h2>Hover on &lt;div&gt;</h2>
+    <div class="hover-div">Passe o mouse aqui!</div>
+
+    <h2>Simple Tooltip Hover</h2>
+    <a href="#" class="tooltip">Passe o mouse aqui
+        <span class="tooltip-text">Tooltip text</span>
+    </a>
+
+    <h2>Match the first &lt;p&gt; element</h2>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+
+    <h2>Match the first &lt;i&gt; element in all &lt;p&gt; elements</h2>
+    <p><i>Primeiro itálico no primeiro parágrafo</i> e <i>outro itálico</i></p>
+    <p><i>Primeiro itálico no segundo parágrafo</i> e <i>outro itálico</i></p>
+
+    <h2>Match all &lt;i&gt; elements in all first child &lt;p&gt; elements</h2>
+    <div>
+        <p><i>Itálico no primeiro parágrafo</i> e <i>outro itálico</i></p>
+        <p><i>Itálico no segundo parágrafo</i> e <i>outro itálico</i></p>
+    </div>
+
+    <h2>CSS - The :lang Pseudo-class</h2>
+    <p lang="en">This is a paragraph in English.</p>
+    <p lang="fr">Ceci est un paragraphe en français.</p>
+
+    <h2>CSS - The ::first-line Pseudo-element</h2>
+    <p class="first-line">Este é um parágrafo com a primeira linha estilizada.</p>
+
+    <h2>CSS - The ::first-letter Pseudo-element</h2>
+    <p class="first-letter">Este é um parágrafo com a primeira letra estilizada.</p>
+
+    <h2>Pseudo-elements and HTML Classes</h2>
+    <p class="pseudo-element">Este parágrafo tem pseudo-elementos.</p>
+
+    <h2>Multiple Pseudo-elements</h2>
+    <p class="multiple-pseudo-elements">Este parágrafo tem múltiplos pseudo-elementos.</p>
+
+    <h2>CSS - The ::before Pseudo-element</h2>
+    <p class="before-element">Este parágrafo tem um pseudo-elemento ::before.</p>
+
+    <h2>CSS - The ::after Pseudo-element</h2>
+    <p class="after-element">Este parágrafo tem um pseudo-elemento ::after.</p>
+
+    <h2>CSS - The ::marker Pseudo-element</h2>
+    <ul class="marker-element">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+    </ul>
+
+    <h2>CSS - The ::selection Pseudo-element</h2>
+    <p class="selection-element">Selecione este texto para ver o efeito do ::selection.</p>
+
+</body>
+</html>
